@@ -39,7 +39,7 @@ nav a:hover{
 }
 
 .introduction{
-  margin: 0 10px 0 10px; 
+  margin: 0 10px 0 10px;
 }
 
 .photo{
@@ -70,12 +70,12 @@ nav a:hover{
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to top, #fed330 25%, rgba(0, 0, 0, 0) 40%);
-  
+
   position: absolute;
   left: 0;
   bottom: 2px;
   z-index: -1;
-  
+
   will-change: width;
   transform: rotate(-2deg);
   transform-origin: left bottom
@@ -162,23 +162,23 @@ hr{
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
-}  
-  
-  .introduction{
-  margin: 0 40px 0 40px; 
 }
-  
+
+  .introduction{
+  margin: 0 40px 0 40px;
+}
+
   .footer{
    display: flex;
   }
-  
+
   .sticky{
   position: fixed;
   top: 0px;
   width: 60%;
   background: white;
   }
-  
+
   nav{
   display: flex;
   }
