@@ -1,6 +1,7 @@
 :root{
   background: white;
   font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
   line-height: 1.4;
   color: #142646;
   --red: #CB5050;
@@ -12,6 +13,10 @@
   --light-gray: rgba(237, 239, 242, 1);
 }
 
+.main_container{
+  margin-bottom: 4em;
+  margin: auto;
+}
 
 .title{
   font-size: 28px;
@@ -39,15 +44,13 @@ nav a:hover{
 }
 
 .introduction{
-  margin: 0 10px 0 10px;
+  display: grid;
 }
 
 .photo{
   transform: rotate(-2deg);
-  height: 350px;
-  margin-left: inherit;
-  margin-right: auto;
-  background: url(https://images.squarespace-cdn.com/content/v1/5762cadc5016e10c8738d4b0/1550779816007-U2KVVZTBX4KNFKVHQMZB/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/2018-05-HR-Stock-426-edit.jpg?format=500w) center no-repeat;
+  width: 450px;
+  justify-self: center;
 }
 
 .illo{
@@ -85,9 +88,7 @@ nav a:hover{
   width: 0;
 }
 
-/*
-* animation styles
-*/
+/* animation styles */
 
 .link::before{
   transition: width .1s ease-out;
@@ -106,10 +107,6 @@ h4{
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-}
-
-body{
- font-size: 20px;
 }
 
 hr{
@@ -132,6 +129,7 @@ hr{
 
 .sticky {
   position: sticky;
+  width: auto;
   top: 0px;
   background: white;
 }
@@ -155,31 +153,38 @@ hr{
 
 /* Make it web responsive */
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
 .main_container{
+  display: grid;
   margin-top: 45px;
   margin-bottom: 4em;
-  width: 60vw;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-  .introduction{
+.photo{
+  transform: rotate(-2deg);
+  width: 530px;
+  justify-self: center;
+}
+.introduction{
   margin: 0 40px 0 40px;
+  display: grid;
 }
 
-  .footer{
+.footer{
    display: flex;
   }
 
-  .sticky{
-  position: fixed;
+.sticky{
+  width: auto;
+  position: sticky;
   top: 0px;
-  width: 60%;
   background: white;
   }
 
-  nav{
+nav{
   display: flex;
   }
 }
