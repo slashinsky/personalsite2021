@@ -12,6 +12,9 @@
   --dark-blue: #2B3445;
   --light-gray: rgba(237, 239, 242, 1);
 }
+.html{
+  width: fit-content;
+}
 
 .main_container{
   margin-bottom: 4em;
@@ -43,14 +46,13 @@ nav a:hover{
   text-decoration: underline;
 }
 
-.introduction{
-  display: grid;
-}
-
 .photo{
   transform: rotate(-2deg);
-  width: 450px;
+  width: 85vw;
   justify-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .illo{
