@@ -1,33 +1,41 @@
-:root{
-  background: white;
-  font-family: 'Work Sans', sans-serif;
+:root {
+  background: var(--light-gray);
+  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   line-height: 1.4;
   color: #142646;
-  --red: #CB5050;
-  --orange: #F2A35A;
-  --yellow: #F1C527;
-  --green: #6FAE88;
-  --blue: #60B0C1;
-  --dark-blue: #2B3445;
-  --light-gray: rgba(237, 239, 242, 1);
+  --red: #cb5050;
+  --orange: #f2a35a;
+  --yellow: #f1c527;
+  --green: #6fae88;
+  --blue: #60b0c1;
+  --dark-blue: #2b3445;
+  --light-gray: #f9f9f9;
 }
-.html{
+.html {
   width: fit-content;
 }
 
-.main_container{
+body {
+  margin: 8px;
+  font-family: "Work Sans", sans-serif;
+  color: #142646;
+  background: var(--light-gray);
+}
+
+.main_container {
   margin-bottom: 4em;
   margin: auto;
+  display: grid;
 }
 
-.title{
+.title {
   font-size: 28px;
   font-weight: 600;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
-nav{
+nav {
   list-style: none;
   align-self: center;
   font-size: 18px;
@@ -35,18 +43,29 @@ nav{
   margin-left: auto;
 }
 
-nav a{
+nav a {
   padding-left: 20px;
   text-decoration: none;
   color: #142646;
   margin-left: auto;
 }
 
-nav a:hover{
+nav a:hover {
   text-decoration: underline;
+  color: #142646;
 }
 
-.photo{
+.footer a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #142646;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #142646;
+}
+
+.photo {
   transform: rotate(-2deg);
   width: 85vw;
   justify-self: center;
@@ -55,14 +74,14 @@ nav a:hover{
   margin-right: auto;
 }
 
-.illo{
-  width: 100vw;
-  margin-left: inherit;
+.illo {
+  padding-top: 30px;
+  width: 95vw;
+  margin-left: auto;
   margin-right: auto;
-  background: url(https://images.squarespace-cdn.com/content/v1/5762cadc5016e10c8738d4b0/1550779816007-U2KVVZTBX4KNFKVHQMZB/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/2018-05-HR-Stock-426-edit.jpg?format=500w) center no-repeat;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: #142646;
   position: relative;
@@ -70,11 +89,12 @@ nav a:hover{
   display: inline-flex;
 }
 
-.link::before{
+.link::before {
   content: "";
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, #fed330 25%, rgba(0, 0, 0, 0) 40%);
+  height: 40%;
+  background: #fed330 25%;
+  /*background-image: linear-gradient(to top, #fed330 25%, rgba(0, 0, 0, 0) 40%);*/
 
   position: absolute;
   left: 0;
@@ -83,46 +103,46 @@ nav a:hover{
 
   will-change: width;
   transform: rotate(-2deg);
-  transform-origin: left bottom
+  transform-origin: left bottom;
 }
 
-.link:hover::before{
+.link:hover::before {
   width: 0;
 }
 
 /* animation styles */
 
-.link::before{
-  transition: width .1s ease-out;
+.link::before {
+  transition: width 0.1s ease-out;
 }
 
-.link:hover::before{
-  transition-duration: .15s;
+.link:hover::before {
+  transition-duration: 0.15s;
 }
 
-h1{
+h1 {
   font-size: 33px;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
-h4{
+h4 {
   font-size: 18px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
 }
 
-hr{
-  background-color: #B2BAC9;
+hr {
+  background-color: #b2bac9;
   height: 1px;
   border: 0;
   margin: 40px 0 40px 0;
 }
 
-.footer{
+.footer {
   justify-content: space-between;
 }
 
-.pinned_header{
+.pinned_header {
   z-index: 3;
   position: relative;
   margin-bottom: 20px;
@@ -133,60 +153,79 @@ hr{
   position: sticky;
   width: auto;
   top: 0px;
-  background: white;
+  background: var(--light-gray);
 }
 
-.sticky + .introduction{
+.sticky + .introduction {
   padding-top: 0px;
 }
 
-.contact{
-  line-height: .7;
+.contact {
+  line-height: 0.7;
 }
 
-.atlanta{
+.atlanta {
   text-align: center;
   font-size: 14px;
-  color: #4B5D7D;
+  color: #4b5d7d;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-
 /* Make it web responsive */
 
 @media (min-width: 700px) {
-.main_container{
-  display: grid;
-  margin-top: 45px;
-  margin-bottom: 4em;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.photo{
-  transform: rotate(-2deg);
-  width: 530px;
-  justify-self: center;
-}
-.introduction{
-  margin: 0 40px 0 40px;
-  display: grid;
-}
-
-.footer{
-   display: flex;
+  .main_container {
+    display: grid;
+    margin-top: 45px;
+    margin-bottom: 4em;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-.sticky{
-  width: auto;
-  position: sticky;
-  top: 0px;
-  background: white;
+  .photo {
+    transform: rotate(-2deg);
+    width: 530px;
+    justify-self: center;
+  }
+  .introduction {
+    margin: 0 40px 0 40px;
   }
 
-nav{
-  display: flex;
+  .illo {
+    width: 700px;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .sticky {
+    width: auto;
+    position: sticky;
+    top: 0px;
+    background: var(--light-gray);
+  }
+
+  nav {
+    display: flex;
+  }
+}
+
+/* For maintaining gallery spacing */
+.row {
+  margin-bottom: 15px;
+}
+
+.col-md-4 {
+  padding: 15px;
+}
+
+.img-fluid {
+}
+
+@media (max-width: 700px) {
+  .col-md-4 {
   }
 }
