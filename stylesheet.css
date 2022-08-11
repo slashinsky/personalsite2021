@@ -145,7 +145,7 @@ hr {
 .btn-outline-primary:hover{
   color: #FFFFFF;
   background-color: #142646;
-  stroke: #142646;
+  border-color: #142646;
 }
 
 .footer {
