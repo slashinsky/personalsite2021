@@ -45,7 +45,6 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #142646;
   margin-left: 20px;
 }
 
@@ -62,15 +61,6 @@ nav a:hover {
 .footer a:hover {
   text-decoration: underline;
   color: #142646;
-}
-
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
 }
 
 .photo {
@@ -144,6 +134,10 @@ hr {
   height: 1px;
   border: 0;
   margin: 40px 0 40px 0;
+}
+
+.btn-outline-primary{
+  color: #142646;
 }
 
 .footer {
