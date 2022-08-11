@@ -45,6 +45,7 @@ nav {
 
 nav a {
   text-decoration: none;
+  color: #142646;
   margin-left: 20px;
 }
 
@@ -138,6 +139,7 @@ hr {
 
 .btn-outline-primary{
   color: #142646;
+  background-color: #142646;
 }
 
 .footer {
