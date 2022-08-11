@@ -139,7 +139,7 @@ hr {
 
 .btn-outline-primary{
   color: #142646;
-  stroke: #142646;
+  border-color: #142646;
 }
 
 .btn-outline-primary:hover{
