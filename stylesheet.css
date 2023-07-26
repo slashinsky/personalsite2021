@@ -64,9 +64,17 @@ nav a:hover {
   color: #142646;
 }
 
-.photo {
+.headshot {
   transform: rotate(-2deg);
   width: 85vw;
+  justify-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-1up {
+  width: 100vw;
   justify-self: center;
   display: block;
   margin-left: auto;
@@ -124,10 +132,30 @@ h1 {
   font-family: "DM Serif Display", serif;
 }
 
+h2 {
+  font-size: 24px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+
 h4 {
   font-size: 18px;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
+}
+
+figcaption{
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  color: #4a628a;
+  font-weight: 400;
+}
+
+blockquote{
+  background-color: #dbdee5;
+  padding: 16px;
 }
 
 hr {
@@ -194,11 +222,19 @@ hr {
     margin-right: auto;
   }
 
-  .photo {
+  .headshot {
     transform: rotate(-2deg);
     width: 530px;
     justify-self: center;
   }
+
+  .photo-1up {
+  width: 700px;
+  justify-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
   .introduction {
     margin: 0 40px 0 40px;
   }
