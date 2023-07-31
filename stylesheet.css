@@ -224,8 +224,12 @@ hr {
 
   .headshot {
     transform: rotate(-2deg);
-    width: 530px;
+    width: 370px;
     justify-self: center;
+  }
+
+  .headshot:hover {
+    transform: rotate(0deg);
   }
 
   .photo-1up {
