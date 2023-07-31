@@ -73,6 +73,10 @@ nav a:hover {
   margin-right: auto;
 }
 
+.headshot:active {
+  transform: rotate(0deg);
+}
+
 .photo-1up {
   width: 100vw;
   justify-self: center;
